@@ -16,21 +16,21 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="实现一个compose函数123456789function compose(...fns) &amp;#123; &#x2F;&#x2F; fns是传入的函数  const fn &#x3D; fns.pop();  return (...args) &#x3D;&gt; &amp;#123;    fn(...args);    if (fns.length &gt; 0) &amp;#123;      compose(...fns);    &amp;#125">
+    <meta name="description" content="123456789function compose(...fns) &amp;#123; &#x2F;&#x2F; fns是传入的函数  const fn &#x3D; fns.pop();  return (...args) &#x3D;&gt; &amp;#123;    fn(...args);    if (fns.length &gt; 0) &amp;#123;      compose(...fns);    &amp;#125;  &amp;#125;;&amp;#1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="实现一个compose函数">
 <meta property="og:url" content="http://example.com/2022/05/25/9/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="实现一个compose函数123456789function compose(...fns) &amp;#123; &#x2F;&#x2F; fns是传入的函数  const fn &#x3D; fns.pop();  return (...args) &#x3D;&gt; &amp;#123;    fn(...args);    if (fns.length &gt; 0) &amp;#123;      compose(...fns);    &amp;#125">
+<meta property="og:description" content="123456789function compose(...fns) &amp;#123; &#x2F;&#x2F; fns是传入的函数  const fn &#x3D; fns.pop();  return (...args) &#x3D;&gt; &amp;#123;    fn(...args);    if (fns.length &gt; 0) &amp;#123;      compose(...fns);    &amp;#125;  &amp;#125;;&amp;#1">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-05-25T07:14:16.000Z">
-<meta property="article:modified_time" content="2022-11-04T13:22:27.019Z">
+<meta property="article:modified_time" content="2022-11-04T13:51:26.541Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Hexo</title>
+  <title>实现一个compose函数 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -195,7 +195,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text=""></span>
+            <span id="subtitle" data-typed-text="实现一个compose函数"></span>
           
         </div>
 
@@ -218,7 +218,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          178 字
+          165 字
         
       </span>
     
@@ -267,12 +267,12 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none"></h1>
+            <h1 style="display: none">实现一个compose函数</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="实现一个compose函数"><a href="#实现一个compose函数" class="headerlink" title="实现一个compose函数"></a>实现一个compose函数</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">compose</span>(<span class="hljs-params">...fns</span>) &#123; <span class="hljs-comment">// fns是传入的函数</span><br>  <span class="hljs-keyword">const</span> fn = fns.<span class="hljs-title function_">pop</span>();<br>  <span class="hljs-keyword">return</span> <span class="hljs-function">(<span class="hljs-params">...args</span>) =&gt;</span> &#123;<br>    <span class="hljs-title function_">fn</span>(...args);<br>    <span class="hljs-keyword">if</span> (fns.<span class="hljs-property">length</span> &gt; <span class="hljs-number">0</span>) &#123;<br>      <span class="hljs-title function_">compose</span>(...fns);<br>    &#125;<br>  &#125;;<br>&#125;<br></code></pre></td></tr></table></figure>
+                <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">compose</span>(<span class="hljs-params">...fns</span>) &#123; <span class="hljs-comment">// fns是传入的函数</span><br>  <span class="hljs-keyword">const</span> fn = fns.<span class="hljs-title function_">pop</span>();<br>  <span class="hljs-keyword">return</span> <span class="hljs-function">(<span class="hljs-params">...args</span>) =&gt;</span> &#123;<br>    <span class="hljs-title function_">fn</span>(...args);<br>    <span class="hljs-keyword">if</span> (fns.<span class="hljs-property">length</span> &gt; <span class="hljs-number">0</span>) &#123;<br>      <span class="hljs-title function_">compose</span>(...fns);<br>    &#125;<br>  &#125;;<br>&#125;<br></code></pre></td></tr></table></figure>
                 
               </div>
             
@@ -289,7 +289,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div></div>
+      <div>实现一个compose函数</div>
       <div>http://example.com/2022/05/25/9/</div>
     </div>
     <div class="license-meta">
@@ -334,9 +334,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/06/13/10/" title="">
+                      <a href="/2022/06/13/10/" title="怎么优化h5加载速度？怎么实现h5页面秒开？">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile"></span>
+                        <span class="hidden-mobile">怎么优化h5加载速度？怎么实现h5页面秒开？</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -344,8 +344,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/04/10/8/" title="">
-                        <span class="hidden-mobile"></span>
+                      <a href="/2022/04/10/8/" title="防抖和节流">
+                        <span class="hidden-mobile">防抖和节流</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
