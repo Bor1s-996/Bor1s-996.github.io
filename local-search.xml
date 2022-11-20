@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>双网卡链路聚合</title>
+    <link href="/2022/11/20/15/"/>
+    <url>/2022/11/20/15/</url>
+    
+    <content type="html"><![CDATA[<h1 id="双网卡链路聚合"><a href="#双网卡链路聚合" class="headerlink" title="双网卡链路聚合"></a>双网卡链路聚合</h1><h4 id="适用于双网卡叠加带宽速率"><a href="#适用于双网卡叠加带宽速率" class="headerlink" title="适用于双网卡叠加带宽速率"></a>适用于双网卡叠加带宽速率</h4><h5 id="PowerShell："><a href="#PowerShell：" class="headerlink" title="PowerShell："></a>PowerShell：</h5><p>查看当前网卡列表</p><p><code>Get-NetAdapter</code></p><p>参考网卡列表创建一个SwitchTeam</p><p><code>New-NetSwitchTeam -Name &quot;SwitchTeam01&quot; -TeamMembers &quot;网卡1&quot;,&quot;网卡2&quot;</code></p><p>查看SwitchTeam</p><p><code>Get-NetSwitchTeam -Name &quot;SwitchTeam01&quot;</code></p><p>删除SwitchTeam</p><p><code>Remove-NetSwitchTeam -Name &quot;SwitchTeam01&quot;</code></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>排序算法</title>
     <link href="/2022/10/19/14/"/>
     <url>/2022/10/19/14/</url>
